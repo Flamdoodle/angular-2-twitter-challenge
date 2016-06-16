@@ -1,0 +1,14 @@
+<div *ngFor="#tweets of tweet">
+<div class="media">
+ <a class="media-left" href="#">
+   <img class="media-object" src="http://lorempixel.com/100/100/people?{{tweets.pic}}" alt="Generic placeholder image">
+ </a>
+ <div class="media-body">
+   <h4 class="media-heading">{{ tweets.userName }} <small> {{ tweets.tweetHandle }} </small></h4>
+   {{ tweets.tweetBody }}
+   <div>
+       <like></like>
+   </div>
+ </div>
+</div>
+</div>
