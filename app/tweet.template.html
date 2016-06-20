@@ -7,7 +7,7 @@
    <h4 class="media-heading">{{ tweets.userName }} <small> {{ tweets.tweetHandle }} </small></h4>
    {{ tweets.tweetBody }}
    <div>
-       <like></like>
+       <like [TotalLikes]="tweets.count"></like>
    </div>
  </div>
 </div>
